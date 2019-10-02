@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: Ara dizin (Debug\) başka bir projeden (BrokenCarz.vcxproj) paylaşılan dosyalar içeriyor. Bu, hatalı temizleme ve yeniden oluşturma davranışına neden olabilir.
+  BrokenCarz.cpp
+g:\brokencarz\brokencarz\loadobj.h(25): warning C4018: '<': imzalı/imzasız uyuşmazlığı
+g:\brokencarz\brokencarz\loadobj.h(28): warning C4018: '<': imzalı/imzasız uyuşmazlığı
+g:\brokencarz\brokencarz\loadobj.h(39): warning C4018: '<': imzalı/imzasız uyuşmazlığı
+g:\brokencarz\brokencarz\loadobj.h(174): warning C4018: '<': imzalı/imzasız uyuşmazlığı
+g:\brokencarz\brokencarz\brokencarz.cpp(357): warning C4101: 'v0': yerel değişken başvurusu kaldırıldı
+g:\brokencarz\brokencarz\brokencarz.cpp(357): warning C4101: 'v2': yerel değişken başvurusu kaldırıldı
+g:\brokencarz\brokencarz\brokencarz.cpp(356): warning C4101: 'plane': yerel değişken başvurusu kaldırıldı
+g:\brokencarz\brokencarz\brokencarz.cpp(357): warning C4101: 'v1': yerel değişken başvurusu kaldırıldı
+  BrokenCarz.vcxproj -> G:\BrokenCarz\Debug\DinoIsland.exe
