@@ -84,6 +84,8 @@ void drawBox()
 	glEnd();
 }
 
+
+
 void dino(GLint tex) {
 glPushMatrix();
 //head
@@ -133,4 +135,140 @@ glTranslatef(-1.8, 1, -0.3);
 glScalef(0.2, 1, 0.1);
 glutSolidCube(1);
 glPopMatrix();
+}
+
+void HouseLevel(GLuint wall, GLuint door, GLuint owood) {
+
+	glPushMatrix();
+	glScalef(3, 3, 3);
+	
+	glPushMatrix();
+	glBindTexture(GL_TEXTURE_2D, owood);
+	//Floor
+	glTranslatef(0, -1.3, 0);
+	glScalef(2.0, 0.1, 2.0);
+	drawBox();
+	glPopMatrix();
+	glPushMatrix();
+	//WallPart
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(0, -1, -1);
+	glScalef(3.0, 0.5, 0.1);
+	drawBox();
+
+
+	glPopMatrix();
+
+	glPushMatrix();
+	//WallPart
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(-0.75, -0.5, -1);
+	glScalef(0.5, 4.5, 0.1);
+	drawBox();
+	glPopMatrix();
+	glPushMatrix();
+	//WallPart
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(0.75, -0.5, -1);
+	glScalef(0.5, 4.5, 0.1);
+	drawBox();
+	glPopMatrix();
+
+	glPushMatrix();
+	//WallPart
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(0, 2, -1);
+	glScalef(2.0, 0.5, 0.1);
+	drawBox();
+	glPopMatrix();
+
+	glPushMatrix();
+	//WallPart
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(0, 1, 1);
+	glScalef(2.0, 7.3, 0.1);
+	drawBox();
+	glPopMatrix();
+	glPushMatrix();
+	//Celling
+	glBindTexture(GL_TEXTURE_2D, owood);
+	glTranslatef(0.0, 2.0, 0);
+	glScalef(4.0, 0.1, 2.0);
+	drawBox();
+	glPopMatrix();
+	glPushMatrix();
+	//Wall2
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(1.5, 1.0, 0);
+	glScalef(1.0, 7.3, 2.0);
+	drawBox();
+	glPopMatrix();
+	glPushMatrix();
+	//Wall2
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(-0.5, 1.0, 0);
+	glScalef(0.1, 1.0, 2.0);
+	drawBox();
+	glPopMatrix();
+	//Stairs
+
+	glBindTexture(GL_TEXTURE_2D, owood);
+	glPushMatrix();
+	glTranslatef(-1.5, -1.3, 0.9);
+	glScalef(1.0, 1.0, 0.5);
+	drawBox();
+	glPopMatrix();
+	glBindTexture(GL_TEXTURE_2D, owood);
+	glPushMatrix();
+	glTranslatef(-1.5, -2.0, 0.5);
+	glScalef(1.0, 1.0, 0.5);
+	drawBox();
+	glPopMatrix();
+	glBindTexture(GL_TEXTURE_2D, owood);
+	glPushMatrix();
+	glTranslatef(-1.5, -2.5, -0.0);
+	glScalef(1.0, 1.0, 0.5);
+	drawBox();
+	glPopMatrix();
+
+	glPushMatrix();
+	//StairWall
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(-2.4, 0.0, 0);
+	glScalef(1.0, 5.3, 2.0);
+	drawBox();
+	glPopMatrix();
+
+	glPushMatrix();
+	//StairWall
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(-1.4, 0.0, 1);
+	glScalef(3, 5.3, 0.1);
+	drawBox();
+	glPopMatrix();
+	glPushMatrix();
+	//Wall
+	glBindTexture(GL_TEXTURE_2D, wall);
+	glTranslatef(-1.4, 0.0, -1);
+	glScalef(3, 5.3, 0.1);
+	drawBox();
+	glPopMatrix();
+
+	glPushMatrix();
+	//Floor
+	glBindTexture(GL_TEXTURE_2D, owood);
+	glTranslatef(0, -2.3, 0);
+	glScalef(5.0, 0.1, 2.0);
+	drawBox();
+	glPopMatrix();
+
+	glPushMatrix();
+	//Door
+	glBindTexture(GL_TEXTURE_2D, door);
+	//glLightfv(GL_LIGHT0, GL_DIFFUSE, light_purple);
+	glTranslatef(0.3, -2.0, -1.0);
+	glScalef(0.5, 1.5, 0.1);
+	drawBox();
+	glPopMatrix();
+	glPopMatrix();
 }
